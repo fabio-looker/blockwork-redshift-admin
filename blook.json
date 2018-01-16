@@ -1,16 +1,21 @@
 {
+	"startval":{
+		"connectionName":"",
+		"lookerScratchSchema":"looker_scratch"
+	},
 	"schema":{
-		"type":"object",
-		"properties":{
-				"connectionName":{
-						"type":"string",
-						"title":"Connection Name",
-						"description":"See the connections in your instance at /admin/connections. The chosen connection should have Redshift permissions as documented in README.md"
-					},
-				"lookerScratchSchema":{
-						"type":"string",
-						"title":"'looker scratch' schema",
-						"description":"The name of your `looker_scratch` schema for your instance, as configured under the relevant connection"
-					}
-			}
+			"type":"object",
+			"properties":{
+					"connectionName":{
+							"type":"string",
+							"title":"Connection Name",
+							"description":"See the connections in your instance at /admin/connections. The chosen connection should have Redshift permissions as documented in README.md"
+						},
+					"lookerScratchSchema":{
+							"type":"string",
+							"title":"'looker scratch' schema",
+							"description":"The name of your `looker_scratch` schema for your instance, as configured under the relevant connection"
+						}
+				}
+		}
 	}
