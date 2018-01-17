@@ -576,7 +576,7 @@ view: redshift_tables {
     dimension: table_join_key {
         hidden:yes
         type:string
-        sql: CASE WHEN ${schema}='<<:lookerScratchSchema>>'
+        sql: CASE WHEN ${schema}='<<:x.lookerScratchSchema>>'
                 THEN 'name:'||${table}
                 ELSE 'id:'||${table_id}
              END ;;
